@@ -52,6 +52,8 @@ app.post("/summary", async (req, res) => {
 });
 
 /* ================= START ================= */
-app.listen(3000, () =>
-  console.log("🚀 Server running on http://localhost:3000")
+app.listen(process.env.PORT, () =>
+  console.log(`API running on port ${process.env.PORT}`)
 );
+
+
